@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8BFD55D0-9143-468D-9F0E-880E2ACC71D9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Coursework_0._0</RootNamespace>
+    <AssemblyName>Coursework 0.0</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\AudioManager.cs" />
+    <Compile Include="Classes\ManageQuestions.cs" />
+    <Compile Include="Classes\Minigames Classes\SnakeDirection.cs" />
+    <Compile Include="Classes\Minigames Classes\SnakeSquare.cs" />
+    <Compile Include="Classes\Player.cs" />
+    <Compile Include="Classes\PlayerExceptions.cs" />
+    <Compile Include="Forms\Account\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Account\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Program.cs" />
+    <Compile Include="Forms\CustomBoxes\CustomProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomBoxes\CustomProgressBar.Designer.cs">
+      <DependentUpon>CustomProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CustomBoxes\InstructionBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomBoxes\InstructionBox.Designer.cs">
+      <DependentUpon>InstructionBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CustomBoxes\RanOutOfTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomBoxes\RanOutOfTime.Designer.cs">
+      <DependentUpon>RanOutOfTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainMenu\Admin\AdminMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainMenu\Admin\AdminMenu.Designer.cs">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainMenu\Admin\AdminMenuPlayerEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainMenu\Admin\AdminMenuPlayerEditor.Designer.cs">
+      <DependentUpon>AdminMenuPlayerEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainMenu\Admin\AdminSideAddPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainMenu\Admin\AdminSideAddPlayer.Designer.cs">
+      <DependentUpon>AdminSideAddPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainMenu\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainMenu\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainMenu\MainMenuParentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainMenu\MainMenuParentForm.Designer.cs">
+      <DependentUpon>MainMenuParentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Account\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Account\Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Minigames\SnakeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Minigames\SnakeForm.Designer.cs">
+      <DependentUpon>SnakeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Questions\EasyDragAndDrop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Questions\EasyDragAndDrop.Designer.cs">
+      <DependentUpon>EasyDragAndDrop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Questions\EasyRadioButtonQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Questions\EasyRadioButtonQuestion.Designer.cs">
+      <DependentUpon>EasyRadioButtonQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Questions\EasySummaryScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Questions\EasySummaryScreen.Designer.cs">
+      <DependentUpon>EasySummaryScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Questions\EasyTextDropDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Questions\EasyTextDropDown.Designer.cs">
+      <DependentUpon>EasyTextDropDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Questions\EasyTextUserFill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Questions\EasyTextUserFill.Designer.cs">
+      <DependentUpon>EasyTextUserFill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Account\HelpPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Account\HelpPage.Designer.cs">
+      <DependentUpon>HelpPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Templates\GamesTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Templates\GamesTemplate.Designer.cs">
+      <DependentUpon>GamesTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Templates\QuestionTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Templates\QuestionTemplate.Designer.cs">
+      <DependentUpon>QuestionTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Account\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Account\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomBoxes\InstructionBox.resx">
+      <DependentUpon>InstructionBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomBoxes\RanOutOfTime.resx">
+      <DependentUpon>RanOutOfTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainMenu\Admin\AdminMenu.resx">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainMenu\Admin\AdminMenuPlayerEditor.resx">
+      <DependentUpon>AdminMenuPlayerEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainMenu\Admin\AdminSideAddPlayer.resx">
+      <DependentUpon>AdminSideAddPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainMenu\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainMenu\MainMenuParentForm.resx">
+      <DependentUpon>MainMenuParentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Minigames\SnakeForm.resx">
+      <DependentUpon>SnakeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Questions\EasyDragAndDrop.resx">
+      <DependentUpon>EasyDragAndDrop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Questions\EasyRadioButtonQuestion.resx">
+      <DependentUpon>EasyRadioButtonQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Questions\EasySummaryScreen.resx">
+      <DependentUpon>EasySummaryScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Questions\EasyTextDropDown.resx">
+      <DependentUpon>EasyTextDropDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Questions\EasyTextUserFill.resx">
+      <DependentUpon>EasyTextUserFill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Account\HelpPage.resx">
+      <DependentUpon>HelpPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Templates\GamesTemplate.resx">
+      <DependentUpon>GamesTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Templates\QuestionTemplate.resx">
+      <DependentUpon>QuestionTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include=".editorconfig" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screwdriverAvatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrenchAvatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hammerAvatarsm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sawAvatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-5-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\joystick-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administrator-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green Tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blank question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screwdriverDrag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sawDrag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hammerDrag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hammerWithLetters.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Instrutions for admin.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-4-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard-8-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conference-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WASD-Key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tf_w_trans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7074781.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wordbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instructionsQuestions.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instructionsPlayer.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snake-4-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info-5-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hourglass_w_trans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\extrusion_rotate_w_trans %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\extrusion_injection_w_trans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\extrusion_blow_w_trans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rot_w_trans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trans.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pwr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rdbtnhelpform.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rdbtnhelpform1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comboboxhelpform.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textfillhelpform.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pbhelpform.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginreghelpform.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images__1_w_trans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture_w_trans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_3444.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture1.JPG" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\SoundEffects\countdown.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

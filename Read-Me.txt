@@ -1,0 +1,82 @@
+IMPORTANT NOTICE:
+
+Please be aware that attempting to view any of the designers located within the 'questions'
+folder Visual Studio leads to a crash. This issue occurs exclusively during the design-viewing
+phase and does not affect runtime operations. Accessing and viewing the underlying code does not present
+any problems.
+
+------------------
+Admin details:
+Username: admin
+Password: admin
+------------------
+
+-------EASY QUESTION ANSWERS-------
+
+
+Radio Button (randomised)
+What is the primary use of a hammer?
+	Drive nails into material
+How long is a screwdriver on average?
+	25cm
+What is the primary use of a lathe?
+	To shape metal
+
+
+Drag and Drop:
+Screwdriver - middle right
+Saw - bottom right
+Hammer - top right
+
+
+Combo box:
+What does the letter A correspond to?
+	Handle
+What does the letter B correspond to?
+	Claw
+What does the letter C correspond to?
+	Neck
+What does the letter D correspond to?
+	Face
+
+
+Text fill:
+First blank: plane
+Second blank: circular
+Third blank: bending
+Fourth blank: knife
+
+
+-------HARD QUESTION ANSWERS-------
+
+
+Radio Button:
+How does rapid prototyping benefit workshops in product development?
+	Speeds up testing and cuts costs.
+
+
+Drag and drop:
+Top left - middle right (Blow moulding)
+Middle left - bottom right (Injection moulding)
+Bottom left - top right(Rotational moulding)
+
+
+Combo box:
+What does the letter A correspond to?
+	Spindle
+What does the letter B correspond to?
+	Turret
+What does the letter C correspond to?
+	Tailstock
+What does the letter D correspond to?
+	Bed
+
+
+Text fill:
+First blank: try square
+Second blank: vice
+Third blank: mould
+Fourth blank: drill
+
+
+
